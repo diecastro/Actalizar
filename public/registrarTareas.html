@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar tarea</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/registrarTarea.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="shortcut icon">
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="img/logo.png" alt="Logo tarea">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listaTareas.html">Lista tareas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form>
+        <div class="contenedor2">
+            <!--FECHA TAREA-->
+            <h1>Registrar Tareas</h1>
+            <hr class="linea1">
+            <div class="input1">
+                <h2>Fecha de la tarea</h2>
+                <input readonly type="text" id="entregaTarea" placeholder="YYYY-MM-DD">
+                <!--ACA APLIQUE EL DATE PERO QUISE HACERLE UN INPUT PARA QUE SE VIERA MEJOR Y NO SALIERA LAS FLECHA DE SELECCIONAR DIA,AÑO Y MES
+                <input type="date" id="entregaTarea">
+                     -->
+            </div>
+            <!--NOM TAREA-->
+            <div class="input2">
+                <h2>Nombre de la tarea</h2>
+                <input id="nombre" type="text" placeholder="Nombre de la tarea">
+            </div>
+            <!--DESCRIPCION TAREA-->
+            <div class="textarea">
+                <h2>Descripción de la tarea</h2>
+                <textarea id="descripcionTarea" placeholder="Describa la tarea"></textarea>
+            </div>
+            <!--PRIORIDAD DE LA TAREA-->
+            <div class="select1">
+                <h2>Prioridad de la tarea</h2>
+                <select id="prioridadTarea">
+                    <option value="selectPrioridad">Prioridad tarea</option>
+                    <option>Alta</option>
+                    <option>Media</option>
+                    <option>Baja</option>
+                </select>
+            </div>
+            <!--ENCARGADO TAREA-->
+            <div class="select2">
+                <h2>Encargado de la tarea</h2>
+                <select id="encargadoTarea">
+                    <option value="selectEncargadoTarea">Encargado tarea</option>
+                </select>
+            </div>
+            <!--AGREGAR-->
+            <div>
+                <p class="correr_boton">
+                    <button class="boton_personalizado" id="agregarBtn">AGREGAR</button>
+                </p>
+            </div>
+        </div>
+    </form>
+
+    <footer class="pie_pagina">
+        <div class="container_izq">
+            <i class="fas fa-map-marker-alt fa-3x icono1" style="color:#e8e8e8"></i>
+            <p class="ubicacion">San José, Costa Rica</p>
+            <div class="two-icon">
+                <i class="fas fa-envelope fa-3x icono2" style="color:#e8e8e8"></i>
+                <p class="email">Foxbook32@hotmail.com</p>
+            </div>
+        </div>
+        <div class="container_center">
+            <img src="img/logo.png" alt="logo de la aplicación">
+        </div>
+        <div class="container_dere">
+            <p>Síguenos en nuestras redes sociales para enterarse de nuevas noticias.</p>
+            <a><i class="fab fa-facebook-square fa-3x icono3" style="color: #e8e8e8"></i></a>
+            <a><i class="fab fa-instagram fa-3x icono4" style="color:#e8e8e8"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/registrarTarea.js"></script>
+    <script src="https://kit.fontawesome.com/ba455855e1.js"></script>
+    <script src="js/seleccionarFecha.js"></script>
+    <script src="js/rolldate.min.js"></script>
+</body>
+
+</html>

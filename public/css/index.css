@@ -1,0 +1,219 @@
+body{
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+body p{
+    font-family: 'Roboto', sans-serif;
+    color: #444444;
+}
+body h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: #444444;
+}
+header{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#main-header {
+    background: #ffa36d;
+    height: 113px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+}
+#main-header img{
+    width: 121px;
+    padding-left: 42px;
+    padding-top: 2px;
+    float: left;
+}
+nav {
+    padding-top: 21px;
+    padding-left: 74%;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}
+	
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+}			
+nav ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #444444;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul li a:hover{
+    color: white;
+}	
+.seccion_video h1 {
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgb(54, 54, 54);
+    text-align: center;
+    color: #fff;
+ }
+#block{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.seccion_video{
+     padding-top: 200px;
+     width: 101%;
+     padding-bottom: 200px;
+}
+ .boton{
+    border: 4px solid #ff660c;
+    background-color:#ff660c;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+#block .centerBtn{
+    text-align: center;
+    padding-top: 60px;
+}
+.boton{
+    color: #fff;
+    text-decoration: none;
+    initial-letter-align: 15px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(54, 54, 54);
+    font-weight: bolder;
+}
+/*Seccion nosotros*/
+.fondo1{
+    background-color: #e8e8e8;
+    padding-block-end: 96px;
+    width: 101%;
+    padding-block-start: 1px;
+}
+.fondo1 h2{
+    text-align: center;
+    font-size: 51px;
+    color:#ff6509;
+    letter-spacing:9px;
+}
+.fondo1 .centrar_icono {
+    text-align: center;
+}
+.fondo1 .sobre_nosotros{
+    padding-top: 34px;
+    font-size: 20px;
+    width: 900px;
+    padding-left: 18%;
+    text-align: center;
+    line-height: 34px;
+}
+span{
+    font-weight: bold;
+    font-style: oblique;
+}
+/*SLIDER*/
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+.slide img{
+    width: 250px;
+    height: 100px;
+}
+/*FOOTER*/
+footer{
+    background-color: #ffa36d;
+    padding-bottom: 40px;
+    width: 101%;
+}
+.container_izq{
+    padding-left: 67px;
+    padding-top: 45px;
+    float: left;
+  }
+  .container_izq .icono1{
+    float: left;
+  }
+  .container_izq .ubicacion{
+    padding-left: 54px;
+    font-size: 20px;
+  }
+  .two-icon{
+    padding-top: 37px;
+  }
+  .two-icon .icono2{
+    float: left;
+  }
+  .two-icon .email{
+    padding-left: 60px;
+    font-size: 20px;
+  }
+  .container_center{
+    padding-top: 13px;
+    padding-left: 576px;
+  }
+  .container_center img{
+    width: 219px;
+    float: left;
+  }
+  .container_dere{
+    padding-top: 22px;
+    padding-left: 930px;
+  }
+  .container_dere p{
+    font-size: 20px;
+    width: 358px;
+    line-height: 25px;
+  }
+  .container_dere .icono3{
+    padding-left: 113px;
+    padding-top: 6px;
+  }
+  .container_dere .icono4{
+    padding-left: 28px;
+  }

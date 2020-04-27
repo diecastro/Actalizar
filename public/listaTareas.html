@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="css/listaTareas.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="shortcut icon">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="img/logo.png" alt="Logo tarea">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registrarTareas.html">Registrar tareas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="main-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha de entrega</th>
+                    <th>Nombre</th>
+                    <th>Descripcion Tarea</th>
+                    <th>PRioridad tarea</th>
+                    <th>Encargado de tarea</th>
+                    <th>Modificar</th>
+                </tr>
+            </thead>
+            <tbody id="tablaTareas"></tbody>
+        </table>
+    </div>
+
+
+    <footer class="pie_pagina">
+        <div class="container_izq">
+            <i class="fas fa-map-marker-alt fa-3x icono1" style="color:#e8e8e8"></i>
+            <p class="ubicacion">San José, Costa Rica</p>
+            <div class="two-icon">
+                <i class="fas fa-envelope fa-3x icono2" style="color:#e8e8e8"></i>
+                <p class="email">Foxbook32@hotmail.com</p>
+            </div>
+        </div>
+        <div class="container_center">
+            <img src="img/logo.png" alt="logo de la aplicación">
+        </div>
+        <div class="container_dere">
+            <p>Síguenos en nuestras redes sociales para enterarse de nuevas noticias.</p>
+            <a><i class="fab fa-facebook-square fa-3x icono3" style="color: #e8e8e8"></i></a>
+            <a><i class="fab fa-instagram fa-3x icono4" style="color:#e8e8e8"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ba455855e1.js"></script>
+    <script src="js/listaTareas.js"></script>
+
+</body>
+
+</html>
