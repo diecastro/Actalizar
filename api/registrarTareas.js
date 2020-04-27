@@ -48,16 +48,14 @@ router.get("/mostrarTareas", function (req, res) {
 //ACTUALIZAR
 router.put("/actualizar/:nombre", function (req, res) {
   var nombre = req.params.nombre;
-  var user = usuarios.update(nombre)
-    .then(function (result) {
-      console.log(res.json(result));
-      res.json(result);
-    })
-    .catch(function (err) {
-      console.log(err);
-    })
-})
 
+  var tareaPorActualizar = tarea.findOneAndUpdate({nombre:nombre},{ nombre: Math.random() }).exec();
+  tareaPorActualizar.then(function (doc) {
+    res.json(doc)
+  }).catch(function(err){
+    res.reject(err)
+  });
+});
 
 
 

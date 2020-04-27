@@ -33,7 +33,7 @@ fetch('/registrarTareas/mostrarTareas')
 
 function actualizar(nombre) {
     var url = `/registrarTareas/actualizar/${nombre}`;
-    fetch(url, { method: 'UPDATE' })
+    fetch(url, { method: 'PUT' })
         .then(function (result) {
             return result.json();
         })
